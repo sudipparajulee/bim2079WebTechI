@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Display Properties</title>
+        <style>
+            .myheading{
+                display: inline-block;
+                background-color: red;
+            }
+            .myflexdiv{
+                display: flex;
+                justify-content: end;
+                background-color: green;
+            }
+            .myflexdiv h1{
+                background-color: blue;
+                color: white;
+            }
+
+            .course-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .course{
+                margin: 10px;
+                background-color: skyblue;
+                padding: 10px 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="myheading">This is heading</h1>
+        <h1 class="myheading">This is heading</h1>
+
+        <div class="myflexdiv">
+            <h1>This is heading</h1>
+            <h1>This is heading</h1>
+            <h1>This is heading</h1>
+        </div>
+
+        <div class="course-container">
+            <div class="course">
+                <h1>CSIT</h1>
+            </div>
+            <div class="course">
+                <h1>BCA</h1>
+            </div>
+            <div class="course">
+                <h1>BIM</h1>
+            </div>
+            <div class="course">
+                <h1>BHM</h1>
+            </div>
+        </div>
+
+    </body>
+</html>

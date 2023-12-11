@@ -1,0 +1,27 @@
+.projector{
+    color: rgb(255, 255, 0,0.5);
+    background-color: #4d54b9;
+    text-align: center;
+}
+
+.fan{
+    color: white;
+    background-color: red;
+    text-align: right;
+}
+
+.description{
+    text-align: justify;
+}
+
+.mydiv{
+    border: 10px solid blue;
+    /* padding-top: 10px;
+    padding-left:40px;
+    padding-bottom: 10px;
+    padding-right: 40px; */
+    /* padding: 10px 40px; */
+    padding: 10px 40px 20px 40px;
+    background-color: yellow;
+    margin: 10px;
+}

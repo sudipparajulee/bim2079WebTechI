@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>CSS in form</title>
+        <style>
+            .mybtn{
+                background-color: blue;
+                color: white;
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .mybtn:hover{
+                background-color: red;
+                color: yellow;
+            }
+
+            input[type="password"]{
+                border: 2px solid red;
+            }
+
+            input:focus{
+                border: none;
+                outline : 1px solid blue; 
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            <a class="mybtn" href="">Click Here</a>
+        </p>
+        <form class="myform" action="">
+            <input type="text" placeholder="Enter Username">
+            <input type="password" placeholder="Enter Password">
+        </form>
+    </body>
+</html>
