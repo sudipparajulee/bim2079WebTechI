@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        <style>
+            .myform{
+                width: 500px;
+                background-color: skyblue;
+                padding: 20px;
+                margin: 50px auto;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .myform input{
+                display: block;
+                width: 100%;
+                margin: 10px auto;
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid gray;
+            }
+
+            .myform input[type="submit"]
+            {
+                width: 50%;
+                background-color: blue;
+                color: white;
+            }
+
+            .myform input:focus{
+                outline: none;
+            }
+
+            .myform input::placeholder{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form class="myform" action="">
+            <h1>Login</h1>
+            <input type="text" placeholder="Enter Email">
+            <input type="password" placeholder="Enter Password">
+            <input type="submit" value="Login">
+        </form>
+    </body>
+</html>
