@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Design</title>
+        <style>
+            .course-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px;
+            }
+            .course{
+                background-color: #f1f1f1;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            
+            @media screen and (max-width: 768px){
+                .course-container{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media screen and (max-width: 480px){
+                .course-container{
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="course-container">
+            <div class="course">
+                <h1>CSIT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quisquam impedit itaque dolore facilis cupiditate laudantium aut officia sunt deserunt, necessitatibus fugit amet ipsam libero unde dignissimos repellat iste repudiandae?</p>
+            </div>
+
+            <div class="course">
+                <h1>BCA</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quisquam impedit itaque dolore facilis cupiditate laudantium aut officia sunt deserunt, necessitatibus fugit amet ipsam libero unde dignissimos repellat iste repudiandae?</p>
+            </div>
+
+            <div class="course">
+                <h1>BIM</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quisquam impedit itaque dolore facilis cupiditate laudantium aut officia sunt deserunt, necessitatibus fugit amet ipsam libero unde dignissimos repellat iste repudiandae?</p>
+            </div>
+
+            <div class="course">
+                <h1>BHM</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, quisquam impedit itaque dolore facilis cupiditate laudantium aut officia sunt deserunt, necessitatibus fugit amet ipsam libero unde dignissimos repellat iste repudiandae?</p>
+            </div>
+        </div>
+    </body>
+</html>
