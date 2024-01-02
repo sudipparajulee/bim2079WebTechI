@@ -4,10 +4,12 @@
     </head>
     <body>
         <h1>We are learning javascript</h1>
+        <div id="mydiv"></div>
         <script>
             document.write('<h2>Hello World</h2>');
             console.log('hello from console');
-            alert('hello from alert box');
+            // alert('hello from alert box');
+            document.getElementById('mydiv').innerHTML = 'Hello from innerHTML';
         </script>
     </body>
 </html>
