@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Array</title>
+    </head>
+    <body>
+        <script>
+            var myarr = ["Apple","Banana","Orange","Mango"];
+            //add element to array
+            myarr.push("Grapes");
+
+            //sorting the array
+            myarr.sort();
+            myarr.reverse();
+            for(var i=0; i<myarr.length; i++){
+                document.write(myarr[i] + "<br>");
+            }
+
+            document.write("<br><br>");
+            //remove element from array
+            myarr.pop();
+            myarr.pop();
+            for(var i=0; i<myarr.length; i++){
+                document.write(myarr[i] + "<br>");
+            }
+        </script>
+    </body>
+</html>
