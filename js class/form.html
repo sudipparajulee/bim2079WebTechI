@@ -32,20 +32,30 @@
     </head>
     <body>
         <p id="mypara">This is paragraph</p>
-        <form action="">
+        <form action="" onsubmit="return validate()">
             <input type="text" id="username" placeholder="Enter Username">
             <input type="password" id="password" placeholder="Enter Password">
-            <input type="submit" onclick="myFunction();" value="Login">
+            <input type="submit" " value="Login">
         </form>
 
         <script>
 
-            function myFunction()
+            function validate()
             {
                 var uname = document.getElementById("username").value;
                 var pass = document.getElementById("password").value;
-                $msg = "The username is " + uname + " and the password is " + pass;
-                alert($msg);
+                //cannot be empty
+                if(uname == '' || pass=='')
+                {
+                    alert('Username & Password cannot be empty');
+                    return false;
+                }
+                //cannot be same
+                if(uname == pass)
+                {
+                    alert('Username and password cannot be same');
+                    return false;
+                }
             }
         </script>
     </body>
