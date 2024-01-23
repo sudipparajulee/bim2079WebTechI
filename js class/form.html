@@ -56,7 +56,22 @@
                     alert('Username and password cannot be same');
                     return false;
                 }
+
+                //at least five character 
+                if(uname.length<5 || pass.length<5)
+                {
+                    alert('Username and password must be at least 5 characters long');
+                    return false;
+                }
             }
         </script>
     </body>
 </html>
+
+<!-- 
+    Input username, password and email from user. Apply the following validations:
+    1. username,password and email are required.
+    2. username must be at least 5 character and password must be at least 8 character.
+    3. email cannot be same as username
+    4. email cannot be more than 15 character.
+ -->
