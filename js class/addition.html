@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Addition Operation</title>
+    </head>
+    <body>
+        <input type="number" placeholder="Enter First Number" id="num1">
+        <input type="number" placeholder="Enter Second Number" id="num2">
+
+        <button onclick="addFunction()">Add</button>
+        <button onclick="subFunction()">Subtract</button>
+        <button onclick="mulFunction()">Multiply</button>
+        <button onclick="divFunction()">Divide</button>
+
+        <h2 id="result"></h2>
+
+        <script>
+            function addFunction()
+            {
+                var first = document.getElementById('num1').value;
+                var second = document.getElementById('num2').value;
+                first = parseInt(first);
+                second = parseInt(second);
+                var sum = first+second;
+                document.getElementById('result').innerHTML = "The sum is " + sum;
+            }
+
+            function subFunction()
+            {
+                var first = parseInt(document.getElementById('num1').value);
+                var second = parseInt(document.getElementById('num2').value);
+                var sub = first-second;
+                document.getElementById('result').innerHTML = "The Subtraction is : " + sub;
+            }
+
+            function mulFunction()
+            {
+                var first = parseInt(document.getElementById('num1').value);
+                var second = parseInt(document.getElementById('num2').value);
+                var mul = first*second;
+                document.getElementById('result').innerHTML = "The Multiplication is : " + mul;
+            }
+
+            function divFunction()
+            {
+                var first = parseInt(document.getElementById('num1').value);
+                var second = parseInt(document.getElementById('num2').value);
+                var div = first/second;
+                document.getElementById('result').innerHTML = "The Division is : " + div;
+            }
+        </script>
+    </body>
+</html>
