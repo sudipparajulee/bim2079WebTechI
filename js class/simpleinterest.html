@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter Principal Amount" id="principal">
+        <input type="text" placeholder="Enter Time in Years" id="time">
+        <input type="text" placeholder="Enter Rate (p.a)" id="rate">
+        
+        <input type="submit" value="Calculate Interest" onclick="calculateInterest()">
+
+        <h2 id="result"></h2>
+
+        <script>
+            function calculateInterest()
+            {
+                var p = document.getElementById('principal').value;
+                var t = document.getElementById('time').value;
+                var r = document.getElementById('rate').value;
+
+                var si = p*t*r/100;
+
+                document.getElementById('result').innerHTML = "The interest is " + si;
+            }
+        </script>
+        
+    </body>
+</html>
