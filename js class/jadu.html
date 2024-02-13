@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Jadu in Javascript</title>
+    </head>
+    <body>
+        <button onclick="showMagic()">Click for Magic</button>
+        <h1 id="magicaltext">This is Magical Text</h1>
+
+        <script>
+            function showMagic()
+            {
+                var text = document.getElementById('magicaltext');
+                if(text.style.display == "none")
+                {
+                    text.style.display = "block";
+                }
+                else
+                {
+                    text.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>

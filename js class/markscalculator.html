@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>My Title</title>
+        <style>
+            .progress-bar{
+                width: 500px;
+                background-color: rgb(200, 205, 209);
+                border-radius: 10px;
+            }
+
+            .progress{
+                width: 5%;
+                color: white;
+                background-color: green;
+                padding: 10px;
+                display: block;
+                text-align: center;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Marks Calculator</h2>
+        <span>English</span><input type="number" id="eng">
+        <br><br>
+        <span>Science</span><input type="number" id="sci">
+        <br><br>
+        <span>Maths</span><input type="number" id="math">
+        <br><br>
+        <button onclick="result()">Calculate Result</button>
+        <h2 id="result"></h2>
+
+        <p class="progress-bar"><span class="progress" id="progress">0%</span></p>
+        <script>
+            function result()
+            {
+                var eng = document.getElementById('eng').value;
+                var sci = document.getElementById('sci').value;
+                var math = document.getElementById('math').value;
+                if(sci == "" || eng == "" || math == "")
+                {
+                    alert('The values cannot be null');
+                }
+                else
+                {
+                    eng = parseInt(eng);
+                    sci = parseInt(sci);
+                    math = parseInt(math);
+
+                    var total = eng+sci+math;
+                    var percent = total/300 * 100;
+                    document.getElementById('result').innerHTML = "The result is " + percent.toFixed(2) + "%";
+                    document.getElementById('progress').innerHTML = percent.toFixed(2) + "%";
+                    document.getElementById('progress').style.width = percent.toFixed(0) + "%";
+                }
+
+            }
+        </script>
+    </body>
+</html>
