@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Regular Expression</title>
+    </head>
+    <body>
+        <script>
+            // var str = "Web Technology";
+            // var pattern = /no/;
+            // var str = "9876547721";
+            // var pattern = /^98\d{8}$/;
+            //for email
+            var str = "hello@gmail.com";
+            var pattern = /^\w+@\w+\.\w+$/;
+            // var pattern = /@/;
+            var result = pattern.test(str);
+            document.write(result);
+        </script>
+    </body>
+</html>
