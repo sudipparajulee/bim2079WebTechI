@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My title</title>
+    </head>
+    <body>
+        <!-- <input type="text" id="name" onkeyup="myFunction()" placeholder="Enter Name" > -->
+        <input type="text" id="name" placeholder="Enter Name">
+        <button id="mybtn">Click</button>
+        <h2 id="result" ondblclick=""></h2>
+
+        <script>
+            // function myFunction()
+            // {
+            //     var name = document.getElementById('name').value;
+            //     document.getElementById('result').innerHTML = name;
+            // }
+
+            document.getElementById('name').addEventListener('keyup', function(){
+                var name = document.getElementById('name').value;
+                document.getElementById('result').innerHTML = name;
+            });
+
+            document.getElementById('mybtn').addEventListener('click', function(){
+                alert('Button Clicked');
+            });
+        </script>
+    </body>
+</html>

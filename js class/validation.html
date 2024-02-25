@@ -1,0 +1,57 @@
+<!-- Q. Write HTML code to create a form and validate the form for the following fields:
+- Name: It should not be empty and should contain only alphabets.
+- Email: It should not be empty and should be a valid email address.
+- Password: It should not be empty and should contain at least 8 characters.
+- Confirm Password: It should not be empty and should match the password field -->
+<html>
+    <head>
+        <title>Javascript Validation</title>
+    </head>
+    <body>
+        <form onsubmit="return validate()">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <input type="password" id="password" placeholder="Enter Password">
+            <input type="password" id="cpassword" placeholder="Confirm Password">
+            <input type="submit" value="Submit">
+        </form>
+
+        <script>
+            function validate(){
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var cpassword = document.getElementById('cpassword').value;
+
+                if(name == ""){
+                    alert('Name is required');
+                    return false;
+                }
+                if(!isNaN(name)){
+                    alert('Name should contain only alphabets');
+                    return false;
+                }
+                if(email == ""){
+                    alert('Email is required');
+                    return false;
+                }
+                if(password == ""){
+                    alert('Password is required');
+                    return false;
+                }
+                if(password.length < 8){
+                    alert('Password should contain at least 8 characters');
+                    return false;
+                }
+                if(cpassword == ""){
+                    alert('Confirm Password is required');
+                    return false;
+                }
+                if(password != cpassword){
+                    alert('Password and Confirm Password should match');
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
